@@ -114,7 +114,7 @@
   	width: 100%;
   	position: relative;
   	background-color: #d5e1ef;
-  	height: 960px;
+  	height: 100vh;
   	overflow: hidden;
   	display: flex;
   	flex-direction: column;
@@ -126,3 +126,31 @@
   	font-family: Outfit;
 }
 
+/* Responsive styles for mobile devices */
+@media (max-width: 320px) {
+  .content {
+    max-width: 90vw;
+    padding: 12px 8px 32px;
+    font-size: 18px;
+  }
+
+  .qr-image-placeholder {
+    width: 80vw;
+    max-width: 250px;
+    height: 80vh;
+    max-height: 250px;
+    padding: 0 8px;
+  }
+
+  .qr-svg-img {
+    width: 80vw;
+    max-width: 120px;
+    height: 80vh;
+    max-height: 120px;
+  }
+
+  .text {
+    padding: 0 8px;
+    gap: 12px;
+  }
+}
